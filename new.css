@@ -1,0 +1,288 @@
+/* Custom properties/variables  */
+:root {
+    --main-white: #FDFDFD;
+    --main-yellow: #F8C358;
+    --thin-yellow: #FCEBC2;
+    --light-yellow: #FEF9EC;
+    --main-black: #2C2C2C;
+    --hover-yellow: #F9B255;
+  }
+
+*{
+    border: none;
+    margin: 0;
+    list-style: none;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  /* box-sizing: border-box; */
+  box-sizing: inherit;
+}
+
+
+html {
+    box-sizing: border-box;
+  
+    /* Set font size for easy rem calculations
+     * default document font size = 16px, 1rem = 16px, 100% = 16px
+     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+    */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+
+  body{
+    color: var(--main-black);
+    font-size: 1.5rem; /* 18px */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  /* nav bar */
+
+  .nav-bar{
+      width: 100vw;
+      height: 6rem;
+      background-color: var(--main-black);
+  }
+
+  .nav-content{
+      width: 95%;
+      height: 100%;
+      display: flex;
+      margin: 0 auto;
+  }
+
+  .left-nav{
+      width: 30%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+  }
+
+  .right-nav{
+      width: 70%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  }
+
+  .nav-link{
+      color: var(--main-white);
+      display: none;
+  }
+
+  .btn{
+    padding: 0.8rem 2rem;
+    /* max-width: 100%; */
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-left: 15px; 
+    border-radius: 5px;
+  }
+
+  .log-in{
+      background-color: var(--main-white);
+      color: var(--main-black);
+  }
+
+  .sign-up{
+    background-color: var(--main-yellow);
+    color: var(--main-black);
+}
+
+.sign-up:hover{
+    background-color: var(--hover-yellow);
+}
+
+/* main */
+.main-content{
+    width: 100vw;
+    height: 100%;
+}
+
+/* welcome page */
+.welcome-page{
+    width: 100%;
+    height: 60%;
+    background-color: var(--light-yellow);
+    padding: 5rem 0;
+    /* border: 1px solid black; */
+
+}
+
+/* .left-welcome-content{
+
+} */
+
+.content{
+    padding: 0 0 5rem 0;
+
+
+}
+
+.content h1{
+    font-size: 4.3rem;
+    text-align: center;
+    margin: 0 0 5px 0;
+}
+
+.content p{
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+.button-container{
+    display: flex;
+}
+
+.btn-welcome{
+    width: 100%;
+    padding: 1.8rem 0;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 1.6rem;
+    display: inline-block;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#btn-public-perk{
+    background-color: var(--main-white);
+    box-shadow: 4px 1px 6px var(--main-black)
+
+}
+
+#btn-create-account{
+    background-color: var(--main-yellow);
+}
+
+#btn-create-account:hover, .btn-perks:hover{
+    background-color: var(--hover-yellow);
+}
+
+/* public perks */
+.public-perks{
+    width: 100%;
+    height: 100%;
+    background-color: var(--thin-yellow);
+    padding: 5rem 0;
+
+
+}
+
+.public-perks-content h2{
+    text-align: center;
+    margin: 0 0 5rem 0;
+}
+
+.perks-container{
+    width: 100%;
+    height: 400px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+
+}
+
+.perks{
+    width: 80%;
+    height: 334px;
+    /* display: inline-block; */
+    margin: 0 2rem;
+    background-color: #fff;
+}
+
+.perks > p{
+    font-size: 1.7rem;
+    padding: 0 2rem 2rem 1.8rem;
+    font-weight: bolder;
+}
+
+.flex-style{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    padding: 0 2rem 0 1.8rem;
+    font-weight: bolder;
+}
+
+.paragraph-styling{
+    font-size: 1.3rem;
+}
+
+.perks img{
+    margin: 5rem auto;
+    display: block;
+
+
+}
+
+.snapchat img, .mercury img{
+    width: 50%;
+    margin-top: 2rem;
+
+    /* margin:  */
+
+}
+
+
+.quickbooks img, .twillio img, .legalpad img{
+    margin: 0;
+}
+
+.btn-perks{
+    max-width: 100%;
+    padding: 1.8rem 2rem;
+    border-radius: 5px;
+    /* margin: 0 5px; */
+    font-size: 1.6rem;
+    display: block;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--main-yellow);
+    margin: 0 auto;
+}
+
+
+.partners{
+    width: 100%;
+    height: 100%;
+    background-color: var(--hover-yellow);
+}
+
+.partners-content{
+    padding: 5rem 0;
+}
+
+.partners-content h2{
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+}
+
+.partners-logos{
+    display: grid;
+    /* grid-template-columns: repeat(2, minmax(60px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    padding: 1rem;
+
+/* 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
