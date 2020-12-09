@@ -5,13 +5,14 @@
     --thin-yellow: #FCEBC2;
     --light-yellow: #FEF9EC;
     --main-black: #2C2C2C;
+    --light-black: #EBEDEF;
     --hover-yellow: #F9B255;
   }
 
 *{
     border: none;
     margin: 0;
-    /* list-style: none; */
+    list-style: none;
 }
 
 /* box-sizing and font sizing */
@@ -158,11 +159,11 @@ html {
 
 }
 
-#btn-create-account{
+#btn-create-account, #get-in-touch{
     background-color: var(--main-yellow);
 }
 
-#btn-create-account:hover, .btn-perks:hover{
+#btn-create-account:hover, .btn-perks:hover, .btn-redeem-perks-button{
     background-color: var(--hover-yellow);
 }
 
@@ -364,3 +365,108 @@ html {
 .founders-page-content img{
     padding: 2rem 0;
 }
+
+.random-perks{
+    background-color: var(--light-black);
+    width: 100%;
+    height: 100%;
+    padding: 5rem 0;
+}
+.random-perks h2{
+    text-align: center;
+    padding: 2rem 0;
+
+
+}
+
+.random-perks-content{
+    padding: 0 0 4rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2.2rem;
+    justify-items: center;
+    align-items: center;
+
+}
+
+
+.random-perks-content img{
+    max-width: 100%;
+    display: block;
+}
+
+.btn-redeem-perks-button{
+    max-width: 100%;
+    padding: 1.8rem 2rem;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    display: block;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--main-yellow);
+    margin: 0 auto;
+        
+}
+
+.btn-redeem-perks-button:hover{
+    background-color: var(--hover-yellow);
+}
+
+.join-us{
+    background-color: var(--thin-yellow);
+    width: 100%;
+    height: 100%;
+    padding: 5rem 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.join-us h2, .join-us p{
+    padding-bottom: 3rem; 
+}
+
+.btn-join-us{
+    width: 100%;
+    padding: 1.8rem 2rem;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    display: inline-block;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: 'OpenSans-SemiBold', sans-serif;
+
+
+}
+
+#request-a-perk{
+    background-color: var(--main-white);
+}
+
+.join-us-button-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: 1rem;
+}
+
+.footer{
+    background-color: var(--main-yellow);
+    width: 100%;
+    height: 100%;
+}
+
+.footer-nav ul{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+
+
