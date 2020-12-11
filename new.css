@@ -43,6 +43,7 @@ html {
     line-height: 1.4;
   }
 
+  
   /* nav bar */
 
   .nav-bar{
@@ -107,6 +108,7 @@ html {
     height: 100%;
 }
 
+
 /* welcome page */
 .welcome-page{
     width: 100%;
@@ -123,8 +125,6 @@ html {
 
 .content{
     padding: 0 0 5rem 0;
-
-
 }
 
 .content h1{
@@ -148,7 +148,7 @@ html {
     border-radius: 5px;
     margin: 0 5px;
     font-size: 1.6rem;
-    display: inline-block;
+    /* display: inline-block; */
     font-weight: 600;
     cursor: pointer;
 }
@@ -166,6 +166,60 @@ html {
 #btn-create-account:hover, .btn-perks:hover, .btn-redeem-perks-button{
     background-color: var(--hover-yellow);
 }
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width:768px) and (max-device-width : 1440px) {
+    /* Styles */
+
+    .welcome-page{
+        display: flex;
+        padding: 8rem;
+    }
+
+    .left-welcome-content{
+        flex: 50%;
+        /* display: flex;
+        flex-flow: column wrap; */
+    }
+
+    .right-welcome-content{
+        flex: 50%;
+        height: 500px;
+        background-image: url(modern_life.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+    .content{
+        width: 80%;
+    }
+
+    .content h1{
+        font-size: 6.3rem;
+        text-align: left;
+    }
+
+    .content p{
+        font-size: 3.2rem;
+        text-align: left;
+    }
+
+    .button-container{
+        width: 70%;
+    }
+
+    .btn-welcome{
+        max-width: 100%;
+        border-radius: 5px;
+        display: block;
+        cursor: pointer;
+
+    }
+}
+/* Media query stops here */
+
 
 /* public perks */
 .public-perks{
@@ -468,7 +522,7 @@ html {
     height: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
 }
 
@@ -482,8 +536,13 @@ html {
 .footer-nav ul li a{
     text-decoration: underline;
     font-weight: bold;
+    color: var(--main-black);
+    margin: 0 0.8rem;
 
 }
+
+
+
 
 
 
